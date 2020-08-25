@@ -37,7 +37,7 @@
 Steps (Combine columns and drop unnecessary data):
 * Arrival month was converted to numerical values
 * Arrival day, month, and year were combined in a new row labeled date.
-* All daily rates less than $40 were eliminated to remove discounted prices.
+* All daily rates less than $40 to $50 were eliminated to remove discounted prices.
 * Market segments such as aviation, corporate, undefined and complementary rates were dropped to reduce noise and focus on standard consumer rates
 * Other features were dropped
 * Null values were dropped
@@ -71,11 +71,15 @@ When we break the pricing into ranges, then our accuracy in predicting the corre
 * Lead Time
 * Arrival Date (Week)
 * Arrival Date (Month)
-* Country
-** Filtered by country, we can predict the exact price third of the time.
+* Country (Filtered by country, we can predict the exact price third of the time)
 
-### 
-![Average Weekly Rates](Images/All_BRA.png)
+### Price prediction for Brazil (Hotel and Resorts)
+![RandomForestBrazil](Images/All_BRA.png)
+
+### Price prediction for all countries
+![GradientBoostAll](Images/Avg_GradientBoosting.png)
+
+### Price 
 
 ## Linear Regression
 
