@@ -5,49 +5,62 @@
 
 > Using Kaggle’s Hotel Booking Demand dataset, this project seeks to examine:
 * Key features in determining hotel prices
-* Best times to travel abroad  to save money hotels
+* Best times to travel abroad  to save money on hotels
+* Target is Average Daily Rate (adr)
 
-> The project will utilize various data cleaning and machine learning techniques to determine which model most accurately predicts hotel prices. 
+> The project will utilize various data cleaning and machine learning techniques to determine which model most accurately predicts hotel prices.
+* Random Forest Model
+* Gradient Boosting
+* Linear Regression
+* ARIMA
+* Decisin Tree
+* Deep Learning
+* K-nearest neighbors
 
 ## Questions of the Data:
 
 > What data features have the most impact on hotel price?
-*
-*
+* Lead Time (if it's a City Hotel)
+* Arrival Date (Week / Month)
 
 > Is there true cost savings in booking a hotel well in advance? 
-* Yes
+* Yes, but only for City Hotels
 
 > When is the best time to travel to save money on hotels?
-* Off Season
+* Off Season, especially for Resort Hotels
 
 > Can this data be used to build a machine learning model to accurately predict hotel prices? 
-* Yes with a margin of error
+* Yes with a margin of error or $10 to $20 per night
 
 ## Data Cleaning Process
 
 Steps (Combine columns and drop unnecessary data):
 * Arrival month was converted to numerical values
 * Arrival day, month, and year were combined in a new row labeled date.
-* All daily rates less than $50 were eliminated to remove discounted prices.
+* All daily rates less than $40 were eliminated to remove discounted prices.
 * Market segments such as aviation, corporate, undefined and complementary rates were dropped to reduce noise and focus on standard consumer rates
 * Other features were dropped
 * Null values were dropped
-* Transformed non-numeric data using one-hot-encoder and dummy values
-* Rounded average daily rate to the nearest $10 dollars to simplify model predictions
-* Additional filter options to sort data by country
+* Transformed non-numeric data using one-hot-encoder and labeling
+* Rounded average daily rate (ADR) to the nearest $10 dollars to simplify model predictions
+* Additional filter options to sort data by country and 
+* Split City and Resort Hotels for comparision
 * Use standard scaler to normalize the final data frame
 
-> Data frame cleaned to 116,000 rows with 13 columns
+> Data frame cleaned to 116,000 rows with 13 columns.
+> City Hotels made up about two thirds and Resorts made up the other third.
 
 ## Best Time to Travel: Average Weekly Rates
 
 Data indicates the best time to travel to save money is during the non peak times such as winter and early Spring with a general upward trend in the City hotel prices over time.
+High seasonality in the resort hotel data with high peaks and valleys with peak time in the summer / late fall months.
+
+### Average Weekly Rates
+![Average Weekly Rates](https://github.com/johnmyronmillar/JMK/...)
 
 ### Process
 * Data split by City and Resort Hotel
 * Resampled based on a weekly average
-* High seasonality in the resort hotel data with high peaks and valleys with peak time in the summer / late fall months.
 
 ## Random Forest Model / Gradient Boosting
 
@@ -59,7 +72,10 @@ When we break the pricing into ranges, then our accuracy in predicting the corre
 * Arrival Date (Week)
 * Arrival Date (Month)
 * Country
-** Filtered by country, we can predict the exact price 1/3 of the time.
+** Filtered by country, we can predict the exact price third of the time.
+
+### 
+![Average Weekly Rates](Images/All_BRA.png)
 
 ## Linear Regression
 
@@ -79,6 +95,10 @@ Results indicate the model is within $100 dollars of the actual value which is n
 * Nodes = 8
 * Activation = Linear
 * MSE = 654
+
+## K-mean
+
+
 
 ## Final Results
 
