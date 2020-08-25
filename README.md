@@ -147,3 +147,16 @@ https://www.kaggle.com/jessemostipak/hotel-booking-demand/data#nd
 Description:
 * ~119,000 rows of data with 32 columns.  
 * Data includes Average Daily Rates, meal plan, country, lead time, booking date and hotel types.
+
+
+## ARIMA
+Filtered by country (Brazil)
+To be finalized
+With seasonal events this autocorrelations has spikes due to some invents such as Carnival and Olympics.
+
+Due to the high volume of people and major events during certain time of the year the means of the Autocorrelation are higher but as time goes on there is not as much traffic the mean will eventually go negative.
+[Arima_model.png]
+
+## Decision-Trees
+This Decision Tree showed us some surprising data, the must important feature with .47 out of 1 being arrival data week number. That make more sense when Brazil has the most traction of hotel and resort visitors during certain time of the year Such as Olympics and Carnival. Making the tree look at the weeks with the most volume of the outcomes.
+[Decision-tress.png]
