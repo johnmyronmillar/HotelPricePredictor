@@ -122,10 +122,10 @@ Results indicate the model is within $100 dollars of the actual value which is n
 
 ### Process - ran two models with following:
 * Epochs = 100
-* Features = 11
+* Features = 15
 * Nodes = 8
 * Activation = Linear
-* MSE = 599 (Best Model)
+* MSE = 572 (Best Model)
 
 ![DL Loss](images/DL_Loss_Results.PNG)
 
