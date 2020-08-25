@@ -55,8 +55,19 @@ Steps (Combine columns and drop unnecessary data):
 Data indicates the best time to travel to save money is during the non peak times such as winter and early Spring with a general upward trend in the City hotel prices over time.
 High seasonality in the resort hotel data with high peaks and valleys with peak time in the summer / late fall months.
 
+# Lead Time & ADR
+
+Average daily rate was calculated for each day of lead time.  There is a linear relationship between lead time and ADR per the City Hotel data but there is not a strong linear relationship with the Resort Data.  This would indicate that booking a city hotel early can impact price.  
+
+![City Lead Time](images/City_lead_time_to_adr.PNG)
+
+![Resort Lead Time](images/Resort_lead_time_to_adr.PNG)
+
+
 ### Average Weekly Rates
-![Average Weekly Rates](https://github.com/johnmyronmillar/JMK/...)
+![Average Weekly Rates City](images/Weekly_city_rate_date.PNG)
+
+![Average Weekly Rates Resort](images/Weekly_resort_rate_date.PNG)
 
 ### Process
 * Data split by City and Resort Hotel
@@ -81,9 +92,15 @@ When we break the pricing into ranges, then our accuracy in predicting the corre
 
 ### Price 
 
-## Linear Regression
+## Linear Regression & K Nearest Neighbor
 
-Confirmed cost savings in booking in advanced (lead time).
+![City_Regression](images/Linear_reg_city.PNG)
+
+MSE of 15.38
+
+![KNN_Regression](images/KNN_city_data.PNG)
+
+MSE of 15.06
 
 ## ARIMA Model
 
@@ -98,11 +115,11 @@ Results indicate the model is within $100 dollars of the actual value which is n
 * Features = 11
 * Nodes = 8
 * Activation = Linear
-* MSE = 654
+* MSE = 599 (Best Model)
 
-## K-mean
+![DL Loss](images/DL_Loss_Results.PNG)
 
-
+![Diff](images/Deep_Learning_Diff.PNG)
 
 ## Final Results
 
