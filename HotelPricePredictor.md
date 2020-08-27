@@ -114,7 +114,7 @@ Due to the high volume of people and major events during certain time of the yea
 ## Decision-Trees
 This Decision Tree showed us some surprising data, the must important feature with .47 out of 1 being arrival data week number. That make more sense when Brazil has the most traction of hotel and resort visitors during certain time of the year Such as Olympics and Carnival. Making the tree look at the weeks with the most volume of the outcomes.
 
-![Decision_Tree](Images/Decision_trees.PNG)
+![Decision_Trees](Images/Decision_Trees.PNG)
 
 ## Deep Learning Techniques
 
