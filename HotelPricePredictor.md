@@ -3,12 +3,12 @@
 
 ## Summary and Goal of Project
 
-> Using Kaggle’s Hotel Booking Demand dataset, this project seeks to examine:
+Using Kaggle’s Hotel Booking Demand dataset, this project seeks to examine:
 * Key features in determining hotel prices
 * Best times to travel abroad  to save money on hotels
 * Target is Average Daily Rate (adr)
 
-> The project will utilize various data cleaning and machine learning techniques to determine which model most accurately predicts hotel prices.
+The project will utilize various data cleaning and machine learning techniques to determine which model most accurately predicts hotel prices:
 * Random Forest Model
 * Gradient Boosting
 * Linear Regression
@@ -47,8 +47,7 @@ Steps (Combine columns and drop unnecessary data):
 * Split City and Resort Hotels for comparision
 * Use standard scaler to normalize the final data frame
 
-> Data frame cleaned to 116,000 rows with 13 columns.
-> City Hotels made up about two thirds and Resorts made up the other third.
+> Data frame cleaned out 2 to 3 percent of the rows and 2/3rds the columns.
 
 ## Best Time to Travel: Average Weekly Rates
 
@@ -138,16 +137,14 @@ The accuracy of the Classifier models increase to over 70 percent when the price
 Deep learning model was not accurate with a mse of 654.  Significant variances between predicted and actual adr values.
 There is a correlation between cost and lead time (Random Forest Weights).
 
-
 ## Lessons Learned
 
 More Detailed Data
-* More granular data (hotel location)
+* More granular data (hotel's city location)
 * Start Ratings
 More memory
 * Dataset size caused significant slowdowns on machines
 * Had to filter data to run due to size
-
 
 ## Data Source
 
@@ -155,5 +152,6 @@ Hotel Booking Demand Data
 Source – Kaggle
 https://www.kaggle.com/jessemostipak/hotel-booking-demand/data#nd
 Description:
-* ~119,000 rows of data with 32 columns.  
+* ~119,000 rows of data with 32 columns.
+* City Hotels made up about two thirds and Resorts made up the other third.
 * Data includes Average Daily Rates, meal plan, country, lead time, booking date and hotel types.
