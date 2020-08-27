@@ -59,15 +59,15 @@ High seasonality in the resort hotel data with high peaks and valleys with peak 
 
 Average daily rate was calculated for each day of lead time.  There is a linear relationship between lead time and ADR per the City Hotel data but there is not a strong linear relationship with the Resort Data.  This would indicate that booking a city hotel early can impact price.  
 
-![City Lead Time](images/City_lead_time_to_adr.PNG)
+![City Lead Time](Images/City_lead_time_to_adr.PNG)
 
-![Resort Lead Time](images/Resort_lead_time_to_adr.PNG)
+![Resort Lead Time](Images/Resort_lead_time_to_adr.PNG)
 
 
 ### Average Weekly Rates
-![Average Weekly Rates City](images/Weekly_city_rate_date.PNG)
+![Average Weekly Rates City](Images/Weekly_city_rate_date.PNG)
 
-![Average Weekly Rates Resort](images/Weekly_resort_rate_date.PNG)
+![Average Weekly Rates Resort](Images/Weekly_resort_rate_date.PNG)
 
 ### Process
 * Data split by City and Resort Hotel
@@ -94,11 +94,11 @@ When we break the pricing into ranges, then our accuracy in predicting the corre
 
 ## Linear Regression & K Nearest Neighbor
 
-![City_Regression](images/Linear_reg_city.PNG)
+![City_Regression](Images/Linear_reg_city.PNG)
 
 MSE of 15.38
 
-![KNN_Regression](images/KNN_city_data.PNG)
+![KNN_Regression](Images/KNN_city_data.PNG)
 
 MSE of 15.06
 
@@ -108,13 +108,13 @@ To be finalized
 With seasonal events this autocorrelations has spikes due to some invents such as Carnival and Olympics.
 
 Due to the high volume of people and major events during certain time of the year the means of the Autocorrelation are higher but as time goes on there is not as much traffic the mean will eventually go negative.
-[Arima_model.png]
+
+![Arima_model](Images/Arima_Model.PNG)
 
 ## Decision-Trees
 This Decision Tree showed us some surprising data, the must important feature with .47 out of 1 being arrival data week number. That make more sense when Brazil has the most traction of hotel and resort visitors during certain time of the year Such as Olympics and Carnival. Making the tree look at the weeks with the most volume of the outcomes.
-[Decision-tress.png]
 
-
+![Decision_Tree](Images/Decision-trees.PNG)
 
 ## Deep Learning Techniques
 
@@ -127,9 +127,9 @@ Results indicate the model is within $100 dollars of the actual value which is n
 * Activation = Linear
 * MSE = 572 (Best Model)
 
-![DL Loss](images/DL_Loss_Results.PNG)
+![DL Loss](Images/DL_Loss_Results.PNG)
 
-![Diff](images/Deep_Learning_Diff.PNG)
+![Diff](Images/Deep_Learning_Diff.PNG)
 
 ## Final Results
 
@@ -157,6 +157,3 @@ https://www.kaggle.com/jessemostipak/hotel-booking-demand/data#nd
 Description:
 * ~119,000 rows of data with 32 columns.  
 * Data includes Average Daily Rates, meal plan, country, lead time, booking date and hotel types.
-
-
-
